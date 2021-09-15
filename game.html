@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Relive The Memories</title>
+    <!-- <meta http-equiv="refresh" content="60"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <meta name="viewport" content="width=device-width" initial-scale="1"/>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        p{
+            font-size: 4vw;
+            margin: 0;
+            padding: 5px;
+        }
+        .countdown{
+            position:fixed;
+            top:15px;
+            right:20px;
+            color: red;
+            font-size: 4vw;
+        }
+    </style>
+    <p>
+        Relive The Memories <span id="countdown" class="countdown"></span>
+    </p>
+<div class="wrap">
+    <div class="game"></div>
+        <div class="modal-overlay">
+            <div class="modal">
+                <h2 class="winner">You Rock!</h2>
+                <button class="restart">Play Again?</button>
+                <p class="share-text">Follow us on</p>
+                <ul class="social">
+                    <li><a target="_blank" class="instagram" href="https://www.instagram.com/taarangana/"><img src ="images/instagram.png"></span></a></li>
+                    <li><a target="_blank" class="facebook" href="https://www.facebook.com/taarangana"><img src ="images/facebook.png"></span></a></li>
+                    <li><a target="_blank" class="twitter" href="https://twitter.com/_taarangana"><img src ="images/twitter.png"></span></a></li>
+                </ul>
+                
+            </div>
+        </div>
+      </div><!-- End Wrap -->
+      <!-- <div class="wrap"> -->
+            <div class="my-modal-overlay">
+                <div class="mymodal">
+                    <h2 class="winner">Better luck next time!</h2>
+                    <button class="myrestart">Play Again?</button>
+                    <p class="share-text">Follow us on</p>
+                    <ul class="social">
+                        <li><a target="_blank" class="instagram" href="https://www.instagram.com/taarangana/"><img src ="images/instagram.png"></span></a></li>
+                        <li><a target="_blank" class="facebook" href="https://www.facebook.com/taarangana"><img src ="images/facebook.png"></span></a></li>
+                        <li><a target="_blank" class="twitter" href="https://twitter.com/_taarangana"><img src ="images/twitter.png"></span></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+          <!-- </div> -->
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
