@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CORE TEAM TAARANGANA'21</title>
+	<meta name="description" content="A slideshow with a CSS glitch effect for transitioning between slides" />
+	<meta name="keywords" content="slideshow, glitch, effect, css, clip-path, web dev, web design" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../Tlogo.jpg">
+	
+	<link rel="stylesheet" type="text/css" href="css/glitch-slideshow.css" />
+	<script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script src="https://kit.fontawesome.com/f819f251fa.js" crossorigin="anonymous"></script>
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function() {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="demo-2 loading">
+	<!-- <svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<symbol id="icon-github" viewBox="0 0 33 33">
+				<title>github</title>
+				<path d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"/>
+			</symbol>
+		</svg> -->
+	<main>
+		<header class="cd-header container flex justify-between items-center">
+            <a href="#0" class="cd-logo">
+                <svg width="124" height="23" viewBox="0 0 124 23"></svg>
+                <title>Go to homepage</title>
+                <rect width="70" height="23" fill="#c96aa4" />
+                <rect x="70" width="27" height="23" fill="#9a57bd" />
+                <rect x="97" width="27" height="23" fill="#fff" />
+                </svg>
+            </a>
+
+            <a href="#cd-3d-nav" class="cd-header__nav-trigger" aria-label="Toggle menu">
+                <span aria-hidden="true"></span>
+            </a>
+        </header>
+		<nav class="cd-3d-nav js-cd-3d-nav" id="cd-3d-nav">
+			<ul class="cd-3d-nav__list">
+				<li class="cd-3d-nav__item">
+					<a  href="#0" onclick="window.location.href = '../index.html';">
+						<i class="fas fa-home fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><path d="M12,6.6c1.2-0.5,2.6-0.8,4-0.8 c5.6,0,10.2,4.6,10.2,10.2"></path><path d="M5.8,16c0-1.4,0.3-2.8,0.8-4"></path><line x1="13.9" y1="13.9" x2="8.4" y2="8.4"></line> <circle cx="16" cy="16" r="15"></circle><circle cx="16" cy="16" r="3"></circle></svg> -->
+						<span>Home</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../AboutUs/aboutUs.html';">
+						<i class="fas fa-user-friends fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points=" 11,7 11,2 21,2 21,7 "></polyline> <polyline points="12,23 1,23 1,7 31,7 31,23 20,23 "></polyline> <polyline points="30,26 30,30 2,30 2,26 "></polyline><rect x="12" y="20" width="8" height="6"></rect></svg> -->
+						<span>About Us</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../events/event.html';">
+						<i class="fas fa-calendar-day fa-2x"></i> 
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points=" 11,7 11,2 21,2 21,7 "></polyline> <polyline points="12,23 1,23 1,7 31,7 31,23 20,23 "></polyline> <polyline points="30,26 30,30 2,30 2,26 "></polyline><rect x="12" y="20" width="8" height="6"></rect></svg> -->
+						<span>Events</span>
+					</a>
+				</li>
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../Schedule/schedule.html';">
+						<i class="fas fa-calendar-alt fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points=" 11,7 11,2 21,2 21,7 "></polyline> <polyline points="12,23 1,23 1,7 31,7 31,23 20,23 "></polyline> <polyline points="30,26 30,30 2,30 2,26 "></polyline><rect x="12" y="20" width="8" height="6"></rect></svg> -->
+						<span>Schedule</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a onclick="window.location.href = '../comingsoon/StarPage.html';">
+						<i class="fas fa-star fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points="14.858,21.142 22,14 31,22"></polyline><polyline points="1,25 10,17 18.501,24.249 "></polyline> <rect x="1" y="3" width="30" height="26"></rect><circle cx="14.5" cy="10.5" r="2.5"></circle></svg> -->
+						<span>Pronite</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../SPONSOR/sponsors.html';">
+						<i class="fas fa-hands-helping fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="28" height="28"></rect><line x1="9" y1="18" x2="9" y2="6"></line><line x1="9" y1="26" x2="9" y2="22"></line><line x1="12" y1="22" x2="6" y2="22"></line><line x1="23" y1="18" x2="23" y2="6"></line><line x1="23" y1="26" x2="23" y2="22"></line><line x1="26" y1="22" x2="20" y2="22"></line><line x1="16" y1="26" x2="16" y2="14"></line><line x1="16" y1="10" x2="16" y2="6"></line><line x1="13" y1="10" x2="19" y2="10"></line></svg> -->
+						<span>Sponsors</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item cd-3d-nav__item--selected">
+					<a href="#0" onclick="window.location.href = '../MeetTeam/meetTheTeam.html';">
+						<i class="fas fa-users fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points="13 6 2 6 2 30 26 30 26 19"></polyline> <polygon points="16 20 10 22 12 16 26 2 30 6 16 20"></polygon><line x1="22" y1="6" x2="26" y2="10"></line></svg> -->
+						<span>Meet the Team</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../gallery/gallery.html';">
+						<i class="fas fa-images fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points="13 6 2 6 2 30 26 30 26 19"></polyline> <polygon points="16 20 10 22 12 16 26 2 30 6 16 20"></polygon><line x1="22" y1="6" x2="26" y2="10"></line></svg> -->
+						<span>Gallery</span>
+					</a>
+				</li>
+			</ul>
+	
+			<span class="cd-3d-nav__marker cd-3d-nav__marker--col-1" aria-hidden="true"></span>
+		</nav>
+		<div class="content content--fixed">
+			<header class="codrops-header">
+				<div class="codrops-links">
+					<!-- <a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/AudioVisualizers/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=34273" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a> -->
+				</div>
+				<h1 class="codrops-header__title">Meet Our Core Team</h1>
+			</header>
+			<!-- <a class="github" href="https://github.com/codrops/GlitchSlideshow/" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a> -->
+			<!-- <nav class="demos">
+					<a class="demo" href="index.html">Demo 1</a>
+					<a class="demo demo--current" href="index2.html">Demo 2</a>
+				</nav> -->
+			<!-- <p class="info">Based on the <a href="https://tympanus.net/codrops/2017/12/21/css-glitch-effect/">CSS Glitch Effect</a></p> -->
+		</div>
+		<div class="content">
+			<div class="slides slides--contained effect-2">
+				<div class="slide slide--current">
+					<div class="slide__img glitch" style="background-image: url(team-pics/img1.jpg);"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Aaniya Agarwal</h2>
+						<p class="slide__description">Creative Team</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img glitch" style="background-image: url(team-pics/img2.jpg);"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Akansha Singh</h2>
+						<p class="slide__description">Creative Team</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img glitch" style="background-image: url(team-pics/Aroma_Creative.jpg);"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Aroma Agarwal</h2>
+						<p class="slide__description">Creative Team</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img glitch" style="background-image: url(team-pics/Bhavya_Creative.jpeg);"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Bhavya Singhal</h2>
+						<p class="slide__description">Creative Team</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img glitch" style="background-image: url(team-pics/Ena.jpg);"></div>
+					<div class="slide__text">
+						<h2 class="slide__title">Ena Chourey</h2>
+						<p class="slide__description">Sponsorship Team</p>
+					</div>
+				</div>
+			<div class="slide">
+				<div class="slide__img glitch" style="background-image: url(team-pics/Kritleen.jpeg);"></div>
+				<div class="slide__text">
+					<h2 class="slide__title">Kritleen Kaur</h2>
+					<p class="slide__description">Editorial Team</p>
+				</div>
+			</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/Mehak_EM.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Mehak Sangwan</h2>
+				<p class="slide__description">Event Management Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/MuskanGupta.JPG);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Muskan Gupta</h2>
+				<p class="slide__description">Event Management Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/Sakshi_Media.png);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Sakshi Jangra</h2>
+				<p class="slide__description">Media Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/ShreyaVajpayee.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Shreya Vajpayee</h2>
+				<p class="slide__description">Human Resources and Logistics Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/SimranAggarwal.JPG);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Simran Aggarwal</h2>
+				<p class="slide__description">Sponsorship Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/SnehaAggarwal.JPG);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Sneha Aggarwal</h2>
+				<p class="slide__description">Editorial Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/Suhani_WebD.jpeg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Suhani Chawla</h2>
+				<p class="slide__description">Website Development Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/Tanuka.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Tanuka Majumder</h2>
+				<p class="slide__description">Human Resources and Logistics Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/AnanyaaUtreja.jpeg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Ananya Utreja</h2>
+				<p class="slide__description">Public Relations Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/JasleenKaur.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Jasleen Kaur</h2>
+				<p class="slide__description">Event Management Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/NishaSingh.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Nisha Singh</h2>
+				<p class="slide__description">Human Resources and Logistics Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/Tanya_Garg_Web-D_Core.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Tanya Garg</h2>
+				<p class="slide__description">Website Development Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/ShivangiMalik.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Shivangi Malik</h2>
+				<p class="slide__description">Public Relations Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/apurva.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Apurva Sharma</h2>
+				<p class="slide__description">Sponsorship Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/apurva.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Abhigya Kumawat</h2>
+				<p class="slide__description">Human Resources and Logistics Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/apurva.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Trity Singh</h2>
+				<p class="slide__description">Media Team</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide__img glitch" style="background-image: url(team-pics/apurva.jpg);"></div>
+			<div class="slide__text">
+				<h2 class="slide__title">Anjali Sharma</h2>
+				<p class="slide__description">Sponsorship Team</p>
+			</div>
+		</div>
+	</div>
+		<nav class="slide-nav">
+			<button class="slide-nav__button"><span>Previous</span></button>
+			<button class="slide-nav__button"><span>Next</span></button>
+		</nav>
+		</div>
+	</main>
+	<script src="TaaranganaWebsite/assets/js/main.js" charset="utf-8"></script>
+	<script src="TaaranganaWebsite/assets/js/util.js" charset="utf-8"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="js/demo2.js"></script>
+	<script src="../assets/js/util.js"></script>
+    <!-- util functions included in the CodyHouse framework -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

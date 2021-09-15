@@ -1,0 +1,196 @@
+h1{
+	text-shadow: 1px 5px 5px black;
+}
+.sl-slider-wrapper {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.sl-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Slide wrapper and slides */
+
+.sl-slide,
+.sl-slides-wrapper,
+.sl-slide-inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 8px 2px 3px black;
+}
+
+.sl-slide {
+	z-index: 1;
+}
+
+/* The duplicate parts/slices */
+
+.sl-content-slice {
+	overflow: hidden;
+	position: absolute;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	background: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	opacity : 1;
+}
+
+/* Horizontal slice */
+
+.sl-slide-horizontal .sl-content-slice {
+	width: 100%;
+	height: 50%;
+	left: -200px;
+	-webkit-transform: translateY(0%) scale(1);
+	-moz-transform: translateY(0%) scale(1);
+	-o-transform: translateY(0%) scale(1);
+	-ms-transform: translateY(0%) scale(1);
+	transform: translateY(0%) scale(1);
+}
+
+.sl-slide-horizontal .sl-content-slice:first-child {
+	top: -200px;
+	padding: 200px 200px 0px 200px;
+}
+
+.sl-slide-horizontal .sl-content-slice:nth-child(2) {
+	top: 50%;
+	padding: 0px 200px 200px 200px;
+}
+
+/* Vertical slice */
+
+.sl-slide-vertical .sl-content-slice {
+	width: 50%;
+	height: 100%;
+	top: -200px;
+	-webkit-transform: translateX(0%) scale(1);
+	-moz-transform: translateX(0%) scale(1);
+	-o-transform: translateX(0%) scale(1);
+	-ms-transform: translateX(0%) scale(1);
+	transform: translateX(0%) scale(1);
+}
+
+.sl-slide-vertical .sl-content-slice:first-child {
+	left: -200px;
+	padding: 200px 0px 200px 200px;
+}
+
+.sl-slide-vertical .sl-content-slice:nth-child(2) {
+	left: 50%;
+	padding: 200px 200px 200px 0px;
+}
+
+/* Content wrapper */
+/* Width and height is set dynamically */
+.sl-content-wrapper {
+	position: absolute;
+}
+
+.sl-content {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+/* Default styles for background colors */
+.sl-slide-horizontal .sl-slide-inner {
+	background: #ddd;
+}
+
+.sl-slide-vertical .sl-slide-inner {
+	background: #ccc;
+
+}
+
+/*social media icons*/
+.social-media-link--facebook:before {
+	background-image: linear-gradient(45deg, #333333 0%, #333333 49%,  rgb(16, 70, 187) 50%);
+  }
+
+  .social-media-link--twitter:before {
+	background-image: linear-gradient(45deg, #333333 0%, #333333 49%, #5AC2F0 50%);
+  }
+
+  .social-media-link--instagram:before {
+	background-image: linear-gradient(45deg, #333333 0%, #333333 49%, pink 50%);
+  }
+
+  .social-media-link--linkedin:before {
+	background-image: linear-gradient(45deg, #333333 0%, #333333 49%, #4390B5 50%);
+  }
+
+  .social-media-link--youtube:before {
+	background-image: linear-gradient(45deg, #333333 0%, #333333 49%, red 50%);
+  }
+
+  .social-media-links {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 77vh;
+
+  }
+  p{
+	font-family:'lato' sans-serif;
+	color: black;
+	font-size: 18px;
+
+  }
+  .social-media-link {
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+	margin-top: 20px;
+
+	transition: transform 0.5s ease-in-out;
+  }
+  .social-media-link > i {
+	z-index: 1;
+  }
+  .social-media-link:before {
+	width: 45px;
+	height: 45px;
+	border-radius: 4px;
+	content: "";
+	position: absolute;
+	background-size: 300%;
+	background-position: 0% 0%;
+	transition: background-position 0.55s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  }
+  .social-media-link:hover, .social-media-link:active, .social-media-link:focus {
+	transform: translateY(-16px);
+	/* This padding-bottom helps the pointer do stay inside the link,
+	avoiding the animation to flicker. */
+	padding-bottom: 32px;
+
+  }
+  .social-media-link:hover:before, .social-media-link:active:before, .social-media-link:focus:before {
+	background-position: top right;
+	box-shadow: 8px 2px 3px black;
+  }
+  .social-media-link + .social-media-link {
+	margin-left: 4px;
+
+  }
+  /*contact us*/

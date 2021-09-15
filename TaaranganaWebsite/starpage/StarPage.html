@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STAR PAGE- TAARANGANA'21</title>
+    <!-- <meta name="description" content="A transition effect that shows a text trail with different styles." />
+	<meta name="keywords" content="text, trail, copy, brutalism, effect, slideshow, animation, javascript" />
+	<meta name="author" content="Codrops" /> -->
+    <link rel="shortcut icon" href="../Tlogo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:500,900|Source+Code+Pro:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/f819f251fa.js" crossorigin="anonymous"></script>
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style");
+            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+    </script>
+</head>
+
+<body class="demo-4 loading">
+
+    <main>
+        <!-- Nav Bar -->
+        <header class="cd-header container flex justify-between items-center">
+            <a href="#0" class="cd-logo">
+                <svg width="124" height="23" viewBox="0 0 124 23"></svg>
+                <title>Go to homepage</title>
+                <rect width="70" height="23" fill="#c96aa4" />
+                <rect x="70" width="27" height="23" fill="#9a57bd" />
+                <rect x="97" width="27" height="23" fill="#fff" />
+                </svg>
+            </a>
+
+            <a href="#cd-3d-nav" class="cd-header__nav-trigger" aria-label="Toggle menu">
+                <span aria-hidden="true"></span>
+            </a>
+        </header>
+        <nav class="cd-3d-nav js-cd-3d-nav" id="cd-3d-nav">
+			<ul class="cd-3d-nav__list">
+				<li class="cd-3d-nav__item">
+					<a  href="#0" onclick="window.location.href = '../index.html';">
+						<i class="fas fa-home fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><path d="M12,6.6c1.2-0.5,2.6-0.8,4-0.8 c5.6,0,10.2,4.6,10.2,10.2"></path><path d="M5.8,16c0-1.4,0.3-2.8,0.8-4"></path><line x1="13.9" y1="13.9" x2="8.4" y2="8.4"></line> <circle cx="16" cy="16" r="15"></circle><circle cx="16" cy="16" r="3"></circle></svg> -->
+						<span>Home</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0">
+						<i class="fas fa-user-friends fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points=" 11,7 11,2 21,2 21,7 "></polyline> <polyline points="12,23 1,23 1,7 31,7 31,23 20,23 "></polyline> <polyline points="30,26 30,30 2,30 2,26 "></polyline><rect x="12" y="20" width="8" height="6"></rect></svg> -->
+						<span>About Us</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../events/event.html';">
+						<i class="fas fa-calendar-day fa-2x"></i> 
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points=" 11,7 11,2 21,2 21,7 "></polyline> <polyline points="12,23 1,23 1,7 31,7 31,23 20,23 "></polyline> <polyline points="30,26 30,30 2,30 2,26 "></polyline><rect x="12" y="20" width="8" height="6"></rect></svg> -->
+						<span>Events</span>
+					</a>
+				</li>
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../Schedule/schedule.html';">
+						<i class="fas fa-calendar-alt fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points=" 11,7 11,2 21,2 21,7 "></polyline> <polyline points="12,23 1,23 1,7 31,7 31,23 20,23 "></polyline> <polyline points="30,26 30,30 2,30 2,26 "></polyline><rect x="12" y="20" width="8" height="6"></rect></svg> -->
+						<span>Schedule</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item cd-3d-nav__item--selected">
+					<a onclick="window.location.href = '../starpage/StarPage.html';">
+						<i class="fas fa-star fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points="14.858,21.142 22,14 31,22"></polyline><polyline points="1,25 10,17 18.501,24.249 "></polyline> <rect x="1" y="3" width="30" height="26"></rect><circle cx="14.5" cy="10.5" r="2.5"></circle></svg> -->
+						<span>Pronite</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../SPONSOR/sponsors.html';">
+						<i class="fas fa-hands-helping fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="28" height="28"></rect><line x1="9" y1="18" x2="9" y2="6"></line><line x1="9" y1="26" x2="9" y2="22"></line><line x1="12" y1="22" x2="6" y2="22"></line><line x1="23" y1="18" x2="23" y2="6"></line><line x1="23" y1="26" x2="23" y2="22"></line><line x1="26" y1="22" x2="20" y2="22"></line><line x1="16" y1="26" x2="16" y2="14"></line><line x1="16" y1="10" x2="16" y2="6"></line><line x1="13" y1="10" x2="19" y2="10"></line></svg> -->
+						<span>Sponsors</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../MeetTeam/meetTheTeam.html';">
+						<i class="fas fa-users fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points="13 6 2 6 2 30 26 30 26 19"></polyline> <polygon points="16 20 10 22 12 16 26 2 30 6 16 20"></polygon><line x1="22" y1="6" x2="26" y2="10"></line></svg> -->
+						<span>Meet the Team</span>
+					</a>
+				</li>
+	
+				<li class="cd-3d-nav__item">
+					<a href="#0" onclick="window.location.href = '../gallery/gallery.html';">
+						<i class="fas fa-images fa-2x"></i>
+						<!-- <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points="13 6 2 6 2 30 26 30 26 19"></polyline> <polygon points="16 20 10 22 12 16 26 2 30 6 16 20"></polygon><line x1="22" y1="6" x2="26" y2="10"></line></svg> -->
+						<span>Gallery</span>
+					</a>
+				</li>
+			</ul>
+	
+			<span class="cd-3d-nav__marker cd-3d-nav__marker--col-1" aria-hidden="true"></span>
+		</nav>
+        <!-- Frame -->
+        <div class="frame">
+            <div class="frame__title-wrap">
+                <!-- <h1 class="frame__title">Text Trail Effect</h1> -->
+            </div>
+            <p class="frame__tagline">
+
+                <!-- <span class="button hidden"><a href="#">Register here</a></span> -->
+                <!-- Based on <a href="https://dribbble.com/shots/5910521-Abstract-is-hiring">Abstract is hiring</a> -->
+            </p>
+            <div class="frame__links">
+                <div class="event-details">
+                    Live at <span id="time">8</span> pm<br>
+                    <span id="day">Sunday</span> <span id="date">24</span><sup>th</sup> January 2021
+                </div>
+                <br>
+                <span class="button register-button"><a onClick="redirect()" href="https://www.google.com/" target="_blank" id="white-text">Register here</a></span>
+                <!-- <a href="https://tympanus.net/Tutorials/Fake3DEffect/">Previous Demo</a>
+				<a href="https://tympanus.net/codrops/?p=38516">Article</a>
+				<a href="https://github.com/codrops/TextTrailEffect/">GitHub</a> -->
+            </div>
+            <div class="frame__demos">
+
+                <!-- <a href="index.html" class="frame__demo">1</a>
+				<a href="index2.html" class="frame__demo">2</a>
+				<a href="index3.html" class="frame__demo">3</a>
+				<a href="index4.html" class="frame__demo frame__demo--current">4</a>
+				<a href="index5.html" class="frame__demo">5</a> -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__slide">
+                <div class="content__img">
+                    <div class="content__img-inner" style="background-image: url(https://www.iwmbuzz.com/wp-content/uploads/2020/04/5-darshan-ravals-thoughtful-love-songs-to-dedicate-to-your-girlfriend.jpg);"></div>
+                </div>
+                <div class="content__text-wrap">
+                    <span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">Darshan Raval</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner">Darshan Raval</span>
+                    </span>
+                    <span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">Darshan Raval</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">Darshan Raval</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner">Darshan Raval</span>
+                    </span>
+                    <span class="content__text content__text--full">
+						<span class="content__text-inner">Darshan Raval</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner content__text-inner--bottom">Darshan Raval</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner">Darshan Raval</span>
+                    </span>
+                    <span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">Darshan Raval</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">Darshan Raval</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner">Darshan Raval</span>
+                    </span>
+                </div>
+            </div>
+            <div class="content__slide">
+                <div class="content__img">
+                    <div class="content__img-inner" style="background-image: url(https://www.iwmbuzz.com/wp-content/uploads/2019/07/shirley-sethia-covers-that-will-make-you-fall-in-love-with-the-singer.jpg);"></div>
+                </div>
+                <div class="content__text-wrap">
+                    <span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">Shirley Setia</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner">Shirley Setia</span>
+                    </span>
+                    <span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">Shirley Setia</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">Shirley Setia</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner">Shirley Setia</span>
+                    </span>
+                    <span class="content__text content__text--full">
+						<span class="content__text-inner">Shirley Setia</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner content__text-inner--bottom">Shirley Setia</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner">Shirley Setia</span>
+                    </span>
+                    <span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">Shirley Setia</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">Shirley Setia</span>
+                    </span>
+                    <span class="content__text">
+						<span class="content__text-inner">Shirley Setia</span>
+                    </span>
+                </div>
+            </div>
+            <!-- <div class="content__slide">
+				<div class="content__img">
+					<div class="content__img-inner" style="background-image: url(img/6.jpeg);"></div>
+				</div>
+				<div class="content__text-wrap">
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">Mechanic</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">Mechanic</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">Mechanic</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke">Mechanic</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">Mechanic</span>
+					</span>
+					<span class="content__text content__text--full ">
+						<span class="content__text-inner">Mechanic</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--bottom">Mechanic</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">Mechanic</span>
+					</span>
+					<span class="content__text content__text--full">
+						<span class="content__text-inner content__text-inner--stroke">Mechanic</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">Mechanic</span>
+					</span>
+					<span class="content__text">
+						<span class="content__text-inner">Mechanic</span>
+					</span>
+				</div>
+			</div> -->
+            <nav class="content__nav">
+                <!-- <button class="content__nav-button content__nav-button--prev">Prev</button>
+                <button class="content__nav-button content__nav-button--next">Next</button> -->
+                <button class="content__nav-button content__nav-button--prev">&nbsp<i class="fas fa-long-arrow-alt-left fa-2x" style="color:#F0E1CE"></i></button>
+				<button class="content__nav-button content__nav-button--next">&nbsp<i class="fas fa-long-arrow-alt-right fa-2x" style="color:#F0E1CE"></i></button>
+            </nav>
+        </div>
+    </main>
+    <script>
+        function redirect() {
+            // window.location.replace("./index5.html")
+        }
+    </script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/demo4.js"></script>
+    <script src="js/changingDets.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <!-- util functions included in the CodyHouse framework -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
